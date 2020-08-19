@@ -1,0 +1,1066 @@
+{
+  "Shopping-Cart.dll": {
+    "C:\\Users\\Berkay\\source\\repos\\Shopping-Cart\\Shopping-Cart\\Domains\\ShoppingCart\\Concrete\\ShoppingCart.cs": {
+      "Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart": {
+        "System.Collections.Generic.ICollection`1<Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCartItem> Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::get_ShoppingCartItems()": {
+          "Lines": {
+            "31": 33
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.ICollection`1<Shopping_Cart.Domains.Discount.Concrete.Campaign> Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::get_AppliedCampaigns()": {
+          "Lines": {
+            "37": 3
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.ICollection`1<Shopping_Cart.Domains.Discount.Concrete.Coupon> Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::get_AppliedCoupons()": {
+          "Lines": {
+            "41": 3
+          },
+          "Branches": []
+        },
+        "System.Void Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::AddItem(Shopping_Cart.Domains.Catalog.Concrete.Product,System.Int32)": {
+          "Lines": {
+            "66": 13,
+            "67": 13,
+            "68": 13
+          },
+          "Branches": []
+        },
+        "System.Void Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::ApplyDiscounts(Shopping_Cart.Domains.Discount.Concrete.Campaign[])": {
+          "Lines": {
+            "76": 5,
+            "77": 5,
+            "78": 0,
+            "80": 25,
+            "81": 5,
+            "82": 5,
+            "83": 1,
+            "84": 4,
+            "85": 4,
+            "86": 5
+          },
+          "Branches": [
+            {
+              "Line": 77,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 77,
+              "Offset": 7,
+              "EndOffset": 20,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 5
+            },
+            {
+              "Line": 80,
+              "Offset": 77,
+              "EndOffset": 27,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 5
+            },
+            {
+              "Line": 82,
+              "Offset": 51,
+              "EndOffset": 55,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 4
+            },
+            {
+              "Line": 82,
+              "Offset": 51,
+              "EndOffset": 69,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 5
+            },
+            {
+              "Line": 80,
+              "Offset": 77,
+              "EndOffset": 79,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 5
+            }
+          ]
+        },
+        "System.Void Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::ApplyCoupon(Shopping_Cart.Domains.Discount.Concrete.Coupon)": {
+          "Lines": {
+            "93": 6,
+            "94": 6,
+            "95": 0,
+            "97": 6,
+            "98": 1,
+            "100": 5,
+            "101": 6
+          },
+          "Branches": [
+            {
+              "Line": 94,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 94,
+              "Offset": 7,
+              "EndOffset": 20,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 6
+            },
+            {
+              "Line": 97,
+              "Offset": 32,
+              "EndOffset": 36,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 5
+            },
+            {
+              "Line": 97,
+              "Offset": 32,
+              "EndOffset": 49,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 6
+            }
+          ]
+        },
+        "System.Double Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::GetCouponDiscounts()": {
+          "Lines": {
+            "108": 2,
+            "109": 4,
+            "110": 2
+          },
+          "Branches": []
+        },
+        "System.Double Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::GetCampaignDiscounts()": {
+          "Lines": {
+            "117": 8,
+            "118": 12,
+            "119": 8
+          },
+          "Branches": []
+        },
+        "System.Double Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::GetTotalAmountAfterDiscounts()": {
+          "Lines": {
+            "126": 1,
+            "127": 1,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "131": 0,
+            "132": 5,
+            "133": 1,
+            "134": 1,
+            "135": 1,
+            "137": 1,
+            "138": 1
+          },
+          "Branches": [
+            {
+              "Line": 128,
+              "Offset": 46,
+              "EndOffset": 23,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 128,
+              "Offset": 46,
+              "EndOffset": 48,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 132,
+              "Offset": 101,
+              "EndOffset": 76,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 132,
+              "Offset": 101,
+              "EndOffset": 103,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::Print()": {
+          "Lines": {
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "149": 0,
+            "152": 0,
+            "153": 0,
+            "154": 0,
+            "155": 0,
+            "156": 0,
+            "157": 0,
+            "158": 0,
+            "159": 0,
+            "160": 0,
+            "161": 0,
+            "162": 0,
+            "163": 0,
+            "164": 0,
+            "165": 0,
+            "166": 0,
+            "167": 0,
+            "168": 0,
+            "169": 0,
+            "172": 0,
+            "173": 0,
+            "174": 0,
+            "175": 0,
+            "176": 0,
+            "177": 0,
+            "178": 0
+          },
+          "Branches": [
+            {
+              "Line": 153,
+              "Offset": 457,
+              "EndOffset": 87,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 157,
+              "Offset": 429,
+              "EndOffset": 169,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 165,
+              "Offset": 294,
+              "EndOffset": 251,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 165,
+              "Offset": 294,
+              "EndOffset": 296,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 157,
+              "Offset": 429,
+              "EndOffset": 434,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 153,
+              "Offset": 457,
+              "EndOffset": 462,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Double Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::GetDeliveryCost()": {
+          "Lines": {
+            "187": 2
+          },
+          "Branches": []
+        },
+        "System.Double Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::GetTotalAmount()": {
+          "Lines": {
+            "193": 3
+          },
+          "Branches": []
+        },
+        "System.Void Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::.ctor(System.Double,System.Double,System.Double)": {
+          "Lines": {
+            "50": 12,
+            "51": 12,
+            "52": 12,
+            "53": 12,
+            "54": 12,
+            "55": 12,
+            "56": 12,
+            "57": 12,
+            "58": 12
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Berkay\\source\\repos\\Shopping-Cart\\Shopping-Cart\\Domains\\ShoppingCart\\Concrete\\ShoppingCartItem.cs": {
+      "Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCartItem": {
+        "System.Int32 Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCartItem::get_Quantity()": {
+          "Lines": {
+            "27": 30
+          },
+          "Branches": []
+        },
+        "System.Int32 Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCartItem::get_ProductId()": {
+          "Lines": {
+            "35": 0
+          },
+          "Branches": []
+        },
+        "Shopping_Cart.Domains.Catalog.Concrete.Product Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCartItem::get_Product()": {
+          "Lines": {
+            "44": 42
+          },
+          "Branches": []
+        },
+        "System.Void Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCartItem::.ctor(Shopping_Cart.Domains.Catalog.Concrete.Product,System.Int32)": {
+          "Lines": {
+            "53": 14,
+            "54": 14,
+            "55": 14,
+            "56": 1,
+            "58": 13,
+            "59": 0,
+            "61": 13,
+            "62": 13,
+            "63": 13,
+            "64": 13
+          },
+          "Branches": [
+            {
+              "Line": 55,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 55,
+              "Offset": 14,
+              "EndOffset": 27,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 13
+            },
+            {
+              "Line": 58,
+              "Offset": 33,
+              "EndOffset": 35,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 58,
+              "Offset": 33,
+              "EndOffset": 46,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 13
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\Berkay\\source\\repos\\Shopping-Cart\\Shopping-Cart\\Domains\\Discount\\Satisfactions\\DiscountSatisfactions.cs": {
+      "Shopping_Cart.Domains.Discount.Satisfactions.DiscountSatisfactions": {
+        "System.Boolean Shopping_Cart.Domains.Discount.Satisfactions.DiscountSatisfactions::IsCampaignItemCountSatisfied(System.Collections.Generic.ICollection`1<Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCartItem>,Shopping_Cart.Domains.Discount.Concrete.Campaign)": {
+          "Lines": {
+            "22": 5,
+            "23": 5,
+            "24": 5
+          },
+          "Branches": []
+        },
+        "System.Boolean Shopping_Cart.Domains.Discount.Satisfactions.DiscountSatisfactions::IsCouponTotalSatisfied(Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart,Shopping_Cart.Domains.Discount.Concrete.Coupon)": {
+          "Lines": {
+            "32": 6,
+            "33": 14,
+            "34": 6,
+            "35": 6,
+            "36": 6
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Berkay\\source\\repos\\Shopping-Cart\\Shopping-Cart\\Domains\\Discount\\Concrete\\Campaign.cs": {
+      "Shopping_Cart.Domains.Discount.Concrete.Campaign": {
+        "System.Int32 Shopping_Cart.Domains.Discount.Concrete.Campaign::get_CategoryId()": {
+          "Lines": {
+            "23": 0
+          },
+          "Branches": []
+        },
+        "Shopping_Cart.Domains.Catalog.Concrete.Category Shopping_Cart.Domains.Discount.Concrete.Campaign::get_Category()": {
+          "Lines": {
+            "31": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 Shopping_Cart.Domains.Discount.Concrete.Campaign::get_MinimumItem()": {
+          "Lines": {
+            "40": 15
+          },
+          "Branches": []
+        },
+        "System.Void Shopping_Cart.Domains.Discount.Concrete.Campaign::.ctor(Shopping_Cart.Domains.Catalog.Concrete.Category,System.Double,System.Int32,Shopping_Cart.Domains.Discount.Enums.DiscountType)": {
+          "Lines": {
+            "52": 6,
+            "53": 6,
+            "54": 6,
+            "55": 1,
+            "56": 5,
+            "57": 0,
+            "60": 5,
+            "61": 5,
+            "62": 5,
+            "63": 5
+          },
+          "Branches": [
+            {
+              "Line": 54,
+              "Offset": 17,
+              "EndOffset": 19,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 54,
+              "Offset": 17,
+              "EndOffset": 30,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 5
+            },
+            {
+              "Line": 56,
+              "Offset": 36,
+              "EndOffset": 38,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 56,
+              "Offset": 36,
+              "EndOffset": 49,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 5
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\Berkay\\source\\repos\\Shopping-Cart\\Shopping-Cart\\Domains\\Discount\\Concrete\\Coupon.cs": {
+      "Shopping_Cart.Domains.Discount.Concrete.Coupon": {
+        "System.Double Shopping_Cart.Domains.Discount.Concrete.Coupon::get_MinimumCartTotal()": {
+          "Lines": {
+            "20": 18
+          },
+          "Branches": []
+        },
+        "System.Void Shopping_Cart.Domains.Discount.Concrete.Coupon::.ctor(System.Double,Shopping_Cart.Domains.Discount.Enums.DiscountType,System.Double)": {
+          "Lines": {
+            "29": 8,
+            "30": 7,
+            "31": 7,
+            "32": 1,
+            "34": 6,
+            "35": 6
+          },
+          "Branches": [
+            {
+              "Line": 31,
+              "Offset": 24,
+              "EndOffset": 26,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 31,
+              "Offset": 24,
+              "EndOffset": 37,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 6
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\Berkay\\source\\repos\\Shopping-Cart\\Shopping-Cart\\Domains\\Discount\\Concrete\\Discount.cs": {
+      "Shopping_Cart.Domains.Discount.Concrete.Discount": {
+        "Shopping_Cart.Domains.Discount.Enums.DiscountType Shopping_Cart.Domains.Discount.Concrete.Discount::get_DiscountType()": {
+          "Lines": {
+            "25": 0
+          },
+          "Branches": []
+        },
+        "System.Double Shopping_Cart.Domains.Discount.Concrete.Discount::get_Amount()": {
+          "Lines": {
+            "33": 18
+          },
+          "Branches": []
+        },
+        "System.Double Shopping_Cart.Domains.Discount.Concrete.Discount::DiscountByPrice(System.Double)": {
+          "Lines": {
+            "57": 2,
+            "58": 2,
+            "61": 0,
+            "63": 2,
+            "65": 0,
+            "67": 2
+          },
+          "Branches": [
+            {
+              "Line": 58,
+              "Offset": 12,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 58,
+              "Offset": 12,
+              "EndOffset": 22,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 58,
+              "Offset": 18,
+              "EndOffset": 43,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            },
+            {
+              "Line": 58,
+              "Offset": 18,
+              "EndOffset": 52,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Double Shopping_Cart.Domains.Discount.Concrete.Discount::ApplyDiscount(System.Double)": {
+          "Lines": {
+            "75": 1,
+            "76": 1,
+            "77": 0,
+            "79": 1,
+            "80": 1,
+            "81": 1
+          },
+          "Branches": [
+            {
+              "Line": 76,
+              "Offset": 11,
+              "EndOffset": 13,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 76,
+              "Offset": 11,
+              "EndOffset": 38,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 76,
+              "Offset": 41,
+              "EndOffset": 43,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 76,
+              "Offset": 41,
+              "EndOffset": 56,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void Shopping_Cart.Domains.Discount.Concrete.Discount::.ctor(Shopping_Cart.Domains.Discount.Enums.DiscountType,System.Double)": {
+          "Lines": {
+            "42": 14,
+            "43": 14,
+            "44": 14,
+            "45": 1,
+            "47": 13,
+            "48": 13,
+            "49": 13
+          },
+          "Branches": [
+            {
+              "Line": 44,
+              "Offset": 22,
+              "EndOffset": 24,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 44,
+              "Offset": 22,
+              "EndOffset": 35,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 13
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\Berkay\\source\\repos\\Shopping-Cart\\Shopping-Cart\\Domains\\Delivery\\Concrete\\DeliveryCostCalculator.cs": {
+      "Shopping_Cart.Domains.Delivery.Concrete.DeliveryCostCalculator": {
+        "System.Double Shopping_Cart.Domains.Delivery.Concrete.DeliveryCostCalculator::get_FixedCost()": {
+          "Lines": {
+            "45": 0
+          },
+          "Branches": []
+        },
+        "System.Double Shopping_Cart.Domains.Delivery.Concrete.DeliveryCostCalculator::get_CostPerProduct()": {
+          "Lines": {
+            "54": 0
+          },
+          "Branches": []
+        },
+        "System.Double Shopping_Cart.Domains.Delivery.Concrete.DeliveryCostCalculator::get_CostPerDelivery()": {
+          "Lines": {
+            "62": 0
+          },
+          "Branches": []
+        },
+        "System.Double Shopping_Cart.Domains.Delivery.Concrete.DeliveryCostCalculator::CalculateFor(Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart)": {
+          "Lines": {
+            "71": 2,
+            "72": 2,
+            "73": 2,
+            "74": 2,
+            "75": 2
+          },
+          "Branches": []
+        },
+        "System.Int32 Shopping_Cart.Domains.Delivery.Concrete.DeliveryCostCalculator::GetNumberOfDeliveries(Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart)": {
+          "Lines": {
+            "83": 4
+          },
+          "Branches": []
+        },
+        "System.Int32 Shopping_Cart.Domains.Delivery.Concrete.DeliveryCostCalculator::GetNumberUniqueProducts(Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart)": {
+          "Lines": {
+            "92": 4
+          },
+          "Branches": []
+        },
+        "System.Void Shopping_Cart.Domains.Delivery.Concrete.DeliveryCostCalculator::.ctor(System.Double,System.Double,System.Double)": {
+          "Lines": {
+            "24": 5,
+            "25": 5,
+            "26": 5,
+            "27": 1,
+            "29": 4,
+            "30": 1,
+            "32": 3,
+            "33": 1,
+            "35": 2,
+            "36": 2,
+            "37": 2,
+            "38": 2
+          },
+          "Branches": [
+            {
+              "Line": 26,
+              "Offset": 22,
+              "EndOffset": 24,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 26,
+              "Offset": 22,
+              "EndOffset": 35,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            },
+            {
+              "Line": 29,
+              "Offset": 49,
+              "EndOffset": 51,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 29,
+              "Offset": 49,
+              "EndOffset": 62,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 3
+            },
+            {
+              "Line": 32,
+              "Offset": 76,
+              "EndOffset": 78,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 32,
+              "Offset": 76,
+              "EndOffset": 89,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 2
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\Berkay\\source\\repos\\Shopping-Cart\\Shopping-Cart\\Domains\\Catalog\\Concrete\\Category.cs": {
+      "Shopping_Cart.Domains.Catalog.Concrete.Category": {
+        "System.Collections.Generic.ICollection`1<Shopping_Cart.Domains.Catalog.Concrete.Category> Shopping_Cart.Domains.Catalog.Concrete.Category::get_Childs()": {
+          "Lines": {
+            "26": 0
+          },
+          "Branches": []
+        },
+        "System.Void Shopping_Cart.Domains.Catalog.Concrete.Category::set_Childs(System.Collections.Generic.ICollection`1<Shopping_Cart.Domains.Catalog.Concrete.Category>)": {
+          "Lines": {
+            "27": 0
+          },
+          "Branches": []
+        },
+        "System.String Shopping_Cart.Domains.Catalog.Concrete.Category::get_Title()": {
+          "Lines": {
+            "34": 9
+          },
+          "Branches": []
+        },
+        "System.Void Shopping_Cart.Domains.Catalog.Concrete.Category::set_Title(System.String)": {
+          "Lines": {
+            "35": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 Shopping_Cart.Domains.Catalog.Concrete.Category::get_ParentId()": {
+          "Lines": {
+            "43": 0
+          },
+          "Branches": []
+        },
+        "System.Void Shopping_Cart.Domains.Catalog.Concrete.Category::set_ParentId(System.Int32)": {
+          "Lines": {
+            "44": 0
+          },
+          "Branches": []
+        },
+        "Shopping_Cart.Domains.Catalog.Concrete.Category Shopping_Cart.Domains.Catalog.Concrete.Category::get_Parent()": {
+          "Lines": {
+            "52": 0
+          },
+          "Branches": []
+        },
+        "System.Void Shopping_Cart.Domains.Catalog.Concrete.Category::set_Parent(Shopping_Cart.Domains.Catalog.Concrete.Category)": {
+          "Lines": {
+            "53": 0
+          },
+          "Branches": []
+        },
+        "System.Void Shopping_Cart.Domains.Catalog.Concrete.Category::.ctor(System.String,Shopping_Cart.Domains.Catalog.Concrete.Category)": {
+          "Lines": {
+            "61": 17,
+            "62": 17,
+            "63": 17,
+            "64": 4,
+            "66": 13,
+            "68": 13,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 13
+          },
+          "Branches": [
+            {
+              "Line": 63,
+              "Offset": 16,
+              "EndOffset": 18,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 4
+            },
+            {
+              "Line": 63,
+              "Offset": 16,
+              "EndOffset": 29,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 13
+            },
+            {
+              "Line": 68,
+              "Offset": 42,
+              "EndOffset": 44,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 68,
+              "Offset": 42,
+              "EndOffset": 65,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 13
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\Berkay\\source\\repos\\Shopping-Cart\\Shopping-Cart\\Domains\\Catalog\\Concrete\\Product.cs": {
+      "Shopping_Cart.Domains.Catalog.Concrete.Product": {
+        "System.String Shopping_Cart.Domains.Catalog.Concrete.Product::get_Title()": {
+          "Lines": {
+            "24": 6
+          },
+          "Branches": []
+        },
+        "System.Void Shopping_Cart.Domains.Catalog.Concrete.Product::set_Title(System.String)": {
+          "Lines": {
+            "25": 0
+          },
+          "Branches": []
+        },
+        "System.Double Shopping_Cart.Domains.Catalog.Concrete.Product::get_Price()": {
+          "Lines": {
+            "33": 30
+          },
+          "Branches": []
+        },
+        "System.Void Shopping_Cart.Domains.Catalog.Concrete.Product::set_Price(System.Double)": {
+          "Lines": {
+            "34": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 Shopping_Cart.Domains.Catalog.Concrete.Product::get_CategoryId()": {
+          "Lines": {
+            "42": 0
+          },
+          "Branches": []
+        },
+        "System.Void Shopping_Cart.Domains.Catalog.Concrete.Product::set_CategoryId(System.Int32)": {
+          "Lines": {
+            "43": 0
+          },
+          "Branches": []
+        },
+        "Shopping_Cart.Domains.Catalog.Concrete.Category Shopping_Cart.Domains.Catalog.Concrete.Product::get_Category()": {
+          "Lines": {
+            "52": 6
+          },
+          "Branches": []
+        },
+        "System.Void Shopping_Cart.Domains.Catalog.Concrete.Product::set_Category(Shopping_Cart.Domains.Catalog.Concrete.Category)": {
+          "Lines": {
+            "53": 0
+          },
+          "Branches": []
+        },
+        "System.Void Shopping_Cart.Domains.Catalog.Concrete.Product::.ctor(System.String,System.Single,Shopping_Cart.Domains.Catalog.Concrete.Category)": {
+          "Lines": {
+            "62": 16,
+            "63": 16,
+            "65": 16,
+            "66": 1,
+            "68": 15,
+            "69": 1,
+            "71": 14,
+            "72": 1,
+            "74": 13,
+            "75": 13,
+            "76": 13,
+            "77": 13
+          },
+          "Branches": [
+            {
+              "Line": 65,
+              "Offset": 16,
+              "EndOffset": 18,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 65,
+              "Offset": 16,
+              "EndOffset": 29,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 15
+            },
+            {
+              "Line": 68,
+              "Offset": 35,
+              "EndOffset": 37,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 68,
+              "Offset": 35,
+              "EndOffset": 48,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 14
+            },
+            {
+              "Line": 71,
+              "Offset": 58,
+              "EndOffset": 60,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 71,
+              "Offset": 58,
+              "EndOffset": 71,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 13
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\Berkay\\source\\repos\\Shopping-Cart\\Shopping-Cart\\Concrete\\AuditedEntity.cs": {
+      "Shopping_Cart.Concrete.AuditedEntity`1": {
+        "TKey Shopping_Cart.Concrete.AuditedEntity`1::get_Id()": {
+          "Lines": {
+            "20": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean Shopping_Cart.Concrete.AuditedEntity`1::get_IsActive()": {
+          "Lines": {
+            "21": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime Shopping_Cart.Concrete.AuditedEntity`1::get_CreationTime()": {
+          "Lines": {
+            "22": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Int32> Shopping_Cart.Concrete.AuditedEntity`1::get_CreatorUserId()": {
+          "Lines": {
+            "23": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Berkay\\source\\repos\\Shopping-Cart\\Shopping-Cart\\Concrete\\FullAuditedEntity.cs": {
+      "Shopping_Cart.Concrete.FullAuditedEntity`1": {
+        "TKey Shopping_Cart.Concrete.FullAuditedEntity`1::get_Id()": {
+          "Lines": {
+            "20": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean Shopping_Cart.Concrete.FullAuditedEntity`1::get_IsActive()": {
+          "Lines": {
+            "21": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime Shopping_Cart.Concrete.FullAuditedEntity`1::get_CreationTime()": {
+          "Lines": {
+            "22": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Int32> Shopping_Cart.Concrete.FullAuditedEntity`1::get_CreatorUserId()": {
+          "Lines": {
+            "23": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime Shopping_Cart.Concrete.FullAuditedEntity`1::get_LastModificationTime()": {
+          "Lines": {
+            "24": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 Shopping_Cart.Concrete.FullAuditedEntity`1::get_LastModifierId()": {
+          "Lines": {
+            "25": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime Shopping_Cart.Concrete.FullAuditedEntity`1::get_DeletionTime()": {
+          "Lines": {
+            "26": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 Shopping_Cart.Concrete.FullAuditedEntity`1::get_DeletorUserId()": {
+          "Lines": {
+            "27": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean Shopping_Cart.Concrete.FullAuditedEntity`1::get_IsDeleted()": {
+          "Lines": {
+            "28": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
