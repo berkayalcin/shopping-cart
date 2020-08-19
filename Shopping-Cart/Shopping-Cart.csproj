@@ -6,4 +6,8 @@
     <RootNamespace>Shopping_Cart</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Domains\Catalog\Abstract\" />
+  </ItemGroup>
+
 </Project>

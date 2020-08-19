@@ -6,7 +6,7 @@ namespace Shopping_Cart.Concrete
     /// <summary>
     /// Full Audited Entity
     /// </summary>
-    public class FullAuditedEntity : FullAuditedEntity<int>
+    public abstract class FullAuditedEntity : FullAuditedEntity<int>
     {
 
     }
@@ -15,9 +15,9 @@ namespace Shopping_Cart.Concrete
     /// Full Audited Entity
     /// </summary>
     /// <typeparam name="TKey">Primary Key</typeparam>
-    public class FullAuditedEntity<TKey> : IFullAuditedEntity<TKey> where TKey : struct
+    public abstract class FullAuditedEntity<TKey> : IFullAuditedEntity<TKey> where TKey : struct
     {
-        public int Id { get; set; }
+        public TKey Id { get; set; }
         public bool IsActive { get; set; }
         public DateTime CreationTime { get; set; }
         public int? CreatorUserId { get; set; }
