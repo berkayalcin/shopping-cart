@@ -12,7 +12,7 @@ namespace Shopping_Cart.Domains.ShoppingCart.Concrete
 
 
 
-        private Guid _productId;
+        private int _productId;
 
 
 
@@ -31,7 +31,7 @@ namespace Shopping_Cart.Domains.ShoppingCart.Concrete
         /// <summary>
         /// Product Id
         /// </summary>
-        public Guid ProductId
+        public int ProductId
         {
             get { return _productId; }
         }
