@@ -4,6 +4,10 @@ using System.Text;
 
 namespace Shopping_Cart.Domains.Discount.Enums
 {
+
+    /// <summary>
+    /// Discount Types
+    /// </summary>
     public enum DiscountType
     {
         /// <summary>

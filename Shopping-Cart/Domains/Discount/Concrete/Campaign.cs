@@ -15,6 +15,9 @@ namespace Shopping_Cart.Domains.Discount.Concrete
         private Category _category;
         private int _categoryId;
 
+        /// <summary>
+        /// Category Id
+        /// </summary>
         public int CategoryId
         {
             get { return _categoryId; }

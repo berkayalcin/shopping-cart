@@ -1,20 +1,19 @@
-﻿using Shopping_Cart.Domains.Catalog.Concrete;
+﻿using Shopping_Cart.Concrete;
+using Shopping_Cart.Domains.Catalog.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Shopping_Cart.Domains.ShoppingCart.Concrete
 {
+    /// <summary>
+    /// Shopping Cart Item
+    /// </summary>
     public class ShoppingCartItem
     {
 
 
-
-
-
         private int _productId;
-
-
 
         private Product _product;
 

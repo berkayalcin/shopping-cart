@@ -5,11 +5,21 @@ using System.Linq;
 
 namespace Shopping_Cart.Domains.Delivery.Concrete
 {
+    /// <summary>
+    /// Delivery Cost Calculator
+    /// </summary>
     public class DeliveryCostCalculator
     {
         private double _costPerDelivery;
         private double _costPerProduct;
         private double _fixedCost;
+
+        /// <summary>
+        /// Delivery Cost Calculator
+        /// </summary>
+        /// <param name="costPerDelivery">Cost Per Delivery</param>
+        /// <param name="costPerProduct">Cost Per Product</param>
+        /// <param name="fixedCost">Fixed Cost</param>
 
         public DeliveryCostCalculator(double costPerDelivery, double costPerProduct, double fixedCost)
         {
@@ -52,7 +62,11 @@ namespace Shopping_Cart.Domains.Delivery.Concrete
             get { return _costPerDelivery; }
         }
 
-
+        /// <summary>
+        /// Calculates Delivery Cost For Cart
+        /// </summary>
+        /// <param name="cart">Shopping Cart</param>
+        /// <returns></returns>
         public double CalculateFor(ShoppingCart.Concrete.ShoppingCart cart)
         {
             int numberOfDeliveries = GetNumberOfDeliveries(cart);

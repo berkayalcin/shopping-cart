@@ -11,9 +11,7 @@ namespace Shopping_Cart.Domains.Catalog.Concrete
     {
 
         private string _title;
-        /// <summary>
-        /// Category Title
-        /// </summary>
+
 
 
         private int _parentId;
@@ -28,6 +26,9 @@ namespace Shopping_Cart.Domains.Catalog.Concrete
             get { return _childs; }
             set { _childs = value; }
         }
+        /// <summary>
+        /// Category Title
+        /// </summary>
         public string Title
         {
             get { return _title; }
@@ -43,6 +44,9 @@ namespace Shopping_Cart.Domains.Catalog.Concrete
             set { _parentId = value; }
         }
 
+        /// <summary>
+        /// Parent Category Entity
+        /// </summary>
         public Category Parent
         {
             get { return _parent; }

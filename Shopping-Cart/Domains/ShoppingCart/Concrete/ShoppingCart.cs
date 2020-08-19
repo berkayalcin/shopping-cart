@@ -9,6 +9,10 @@ using System.Text;
 
 namespace Shopping_Cart.Domains.ShoppingCart.Concrete
 {
+
+    /// <summary>
+    /// Shopping Cart
+    /// </summary>
     public class ShoppingCart
     {
 
@@ -26,10 +30,23 @@ namespace Shopping_Cart.Domains.ShoppingCart.Concrete
         {
             get { return _shoppingCartItems; }
         }
+        /// <summary>
+        /// Applied Campaigns
+        /// </summary>
 
         public ICollection<Campaign> AppliedCampaigns => _appliedCampaigns;
+        /// <summary>
+        /// Applied Coupons
+        /// </summary>
         public ICollection<Coupon> AppliedCoupons => _appliedCoupons;
 
+
+        /// <summary>
+        /// Shopping Cart
+        /// </summary>
+        /// <param name="costPerDelivery">Cost Per Delivery</param>
+        /// <param name="costPerProduct">Cost Per Product</param>
+        /// <param name="fixedCost">Fixed Delivery Cost</param>
         public ShoppingCart(double costPerDelivery, double costPerProduct, double fixedCost = 2.99)
         {
             _shoppingCartItems = new List<ShoppingCartItem>();
@@ -120,6 +137,10 @@ namespace Shopping_Cart.Domains.ShoppingCart.Concrete
             return cartTotal;
         }
 
+
+        /// <summary>
+        /// Prints Shopping Cart Items,Total Amount,Delivery Cost
+        /// </summary>
         public void Print()
         {
             double totalCampaignDiscount = GetCampaignDiscounts();

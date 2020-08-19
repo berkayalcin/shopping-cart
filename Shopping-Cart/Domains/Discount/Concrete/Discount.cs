@@ -7,15 +7,27 @@ using System.Text;
 
 namespace Shopping_Cart.Domains.Discount.Concrete
 {
+
+    /// <summary>
+    /// Base Discount Entity
+    /// </summary>
     public abstract class Discount : FullAuditedEntity<int>
     {
         private double _amount;
         private DiscountType _discountType;
 
+
+        /// <summary>
+        /// Discount Type
+        /// </summary>
         public DiscountType DiscountType
         {
             get { return _discountType; }
         }
+
+        /// <summary>
+        /// Discount Amount
+        /// </summary>
         public double Amount
         {
             get { return _amount; }
@@ -35,6 +47,12 @@ namespace Shopping_Cart.Domains.Discount.Concrete
             _discountType = discountType;
             _amount = amount;
         }
+
+        /// <summary>
+        /// Calculates Discount By Price
+        /// </summary>
+        /// <param name="price">Price</param>
+        /// <returns></returns>
         public double DiscountByPrice(double price)
         {
             switch (_discountType)
@@ -47,6 +65,12 @@ namespace Shopping_Cart.Domains.Discount.Concrete
                     throw new InvalidEnumArgumentException();
             }
         }
+
+        /// <summary>
+        /// Applies Discount To Price
+        /// </summary>
+        /// <param name="price">Price</param>
+        /// <returns></returns>
         public double ApplyDiscount(double price)
         {
             price -= DiscountByPrice(price);
