@@ -15,6 +15,9 @@ namespace Shopping_Cart.Domains.ShoppingCart.Concrete
         private ICollection<ShoppingCartItem> _shoppingCartItems;
         private ICollection<Campaign> _appliedCampaigns;
         private ICollection<Coupon> _appliedCoupons;
+        private readonly double costPerDelivery;
+        private readonly double costPerProduct;
+        private readonly double fixedCost;
 
         /// <summary>
         /// Shopping Cart Items
@@ -24,11 +27,14 @@ namespace Shopping_Cart.Domains.ShoppingCart.Concrete
             get { return _shoppingCartItems; }
         }
 
-        public ShoppingCart()
+        public ShoppingCart(double costPerDelivery, double costPerProduct, double fixedCost = 2.99)
         {
             _shoppingCartItems = new List<ShoppingCartItem>();
             _appliedCampaigns = new List<Campaign>();
             _appliedCoupons = new List<Coupon>();
+            this.costPerDelivery = costPerDelivery;
+            this.costPerProduct = costPerProduct;
+            this.fixedCost = fixedCost;
         }
 
         /// <summary>
@@ -111,6 +117,42 @@ namespace Shopping_Cart.Domains.ShoppingCart.Concrete
             return cartTotal;
         }
 
+        public void Print()
+        {
+            double totalCampaignDiscount = GetCampaignDiscounts();
+            double totalCouponDiscount = GetCouponDiscounts();
+
+            double perItemCouponDiscount = totalCouponDiscount / _shoppingCartItems.Count;
+
+
+            var categoryGroups = _shoppingCartItems.GroupBy(x => x.Product.Category.Title);
+            foreach (var category in categoryGroups)
+            {
+                string categoryName = category.Key;
+                var categoryCampaigns = _appliedCampaigns.Where(x => x.Category.Title == category.Key);
+                foreach (var shoppingCartItem in category)
+                {
+                    string productName = shoppingCartItem.Product.Title;
+                    int quantity = shoppingCartItem.Quantity;
+                    double unitPrice = shoppingCartItem.Product.Price;
+                    double totalPrice = unitPrice * quantity;
+                    double totalDiscount = 0;
+                    double totalDiscountedPrice = totalPrice;
+                    foreach (var campaignDiscount in categoryCampaigns)
+                    {
+                        totalDiscount += campaignDiscount.DiscountByPrice(totalDiscountedPrice);
+                        totalDiscountedPrice = campaignDiscount.ApplyDiscount(totalDiscountedPrice);
+                    }
+
+
+                    Console.WriteLine($" Category : {categoryName} | Product :  {productName} |" +
+                        $"Quantity : {quantity} | Unit Price : {unitPrice} | Total Price : {totalPrice} | Total Discount : {totalDiscount} \n");
+                }
+            }
+            Console.WriteLine($"Total Amount    : {GetTotalAmountAfterDiscounts()}");
+            Console.WriteLine($"Delivery Cost   : {GetDeliveryCost()}");
+        }
+
         /// <summary>
         /// Gets Delivery Cost
         /// </summary>
@@ -118,13 +160,14 @@ namespace Shopping_Cart.Domains.ShoppingCart.Concrete
         /// <param name="costPerProduct">Cost Per Product</param>
         /// <param name="fixedCost">Fixed Cost default 2.99 TL</param>
         /// <returns></returns>
-        public double GetDeliveryCost(double costPerDelivery, double costPerProduct, double fixedCost = 2.99) => new DeliveryCostCalculator(costPerDelivery, costPerProduct, fixedCost).CalculateFor(this);
+        public double GetDeliveryCost() => new DeliveryCostCalculator(costPerDelivery, costPerProduct, fixedCost).CalculateFor(this);
 
         /// <summary>
         /// Gets Shopping Cart Total
         /// </summary>
         /// <returns></returns>
         private double GetTotalAmount() => _shoppingCartItems.Sum(item => item.Quantity * item.Product.Price);
+
 
 
     }

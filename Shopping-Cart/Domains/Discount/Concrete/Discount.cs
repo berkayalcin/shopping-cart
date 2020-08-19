@@ -35,20 +35,22 @@ namespace Shopping_Cart.Domains.Discount.Concrete
             _discountType = discountType;
             _amount = amount;
         }
-
-        public double ApplyDiscount(double price)
+        public double DiscountByPrice(double price)
         {
             switch (_discountType)
             {
                 case DiscountType.Rate:
-                    price -= (price) / 100 * _amount;
-                    return price;
+                    return (price) / 100 * _amount;
                 case DiscountType.Amount:
-                    price -= _amount;
-                    return price;
+                    return _amount;
                 default:
                     throw new InvalidEnumArgumentException();
             }
+        }
+        public double ApplyDiscount(double price)
+        {
+            price -= DiscountByPrice(price);
+            return price;
         }
 
 

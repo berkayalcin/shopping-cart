@@ -17,6 +17,7 @@ namespace Shopping_Cart.Domains.Catalog.Concrete
 
 
         private int _parentId;
+        private Category _parent;
         private ICollection<Category> _childs;
 
         /// <summary>
@@ -42,20 +43,29 @@ namespace Shopping_Cart.Domains.Catalog.Concrete
             set { _parentId = value; }
         }
 
+        public Category Parent
+        {
+            get { return _parent; }
+            set { _parent = value; }
+        }
+
         /// <summary>
         /// Category
         /// </summary>
         /// <param name="title">Category Title</param>
         /// <param name="parentId">Optional Parent Id</param>
-        public Category(string title, int? parentId = null)
+        public Category(string title, Category? parent = null)
         {
             if (string.IsNullOrEmpty(title))
                 throw new ArgumentNullException(nameof(title));
 
             _title = title;
 
-            if (parentId.HasValue)
-                _parentId = parentId.Value;
+            if (parent != null)
+            {
+                _parent = parent;
+                _parentId = parent.Id;
+            }
         }
 
 
