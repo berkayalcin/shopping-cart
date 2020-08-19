@@ -15,7 +15,7 @@ namespace Shopping_Cart.Abstract
     /// Full Audited Entity
     /// </summary>
     /// <typeparam name="TKey">Primary Key</typeparam>
-    public interface IFullAuditedEntity<TKey> : IAuditedEntity, IHasModification, IHasDeletion, ISoftDelete where TKey : struct
+    public interface IFullAuditedEntity<TKey> : IAuditedEntity<TKey>, IHasModification, IHasDeletion, ISoftDelete where TKey : struct
     {
 
     }
