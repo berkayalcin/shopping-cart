@@ -73,7 +73,10 @@ namespace Shopping_Cart.Domains.Discount.Concrete
         /// <returns></returns>
         public double ApplyDiscount(double price)
         {
-            price -= DiscountByPrice(price);
+            if (price <= 0 || (price - DiscountByPrice(price)) <= 0)
+                price = 0;
+            else
+                price -= DiscountByPrice(price);
             return price;
         }
 
