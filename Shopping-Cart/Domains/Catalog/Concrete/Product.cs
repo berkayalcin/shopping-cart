@@ -68,6 +68,9 @@ namespace Shopping_Cart.Domains.Catalog.Concrete
             if (category == null)
                 throw new ArgumentNullException(nameof(category));
 
+            if (price < 0)
+                throw new ArgumentNullException(nameof(price));
+
             _title = title;
             _price = price;
             _category = category;

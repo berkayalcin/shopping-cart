@@ -11,12 +11,14 @@ namespace Shopping_Cart.Domains.Discount.Satisfactions
     {
         public static bool IsCampaignItemCountSatisfied(ICollection<ShoppingCartItem> shoppingCartItems, Campaign campaign)
         {
-            return shoppingCartItems.Count > campaign.MinimumItem;
+            return shoppingCartItems.Count >= campaign.MinimumItem;
         }
 
-        public static bool IsCouponTotalSatisfied(ICollection<ShoppingCartItem> shoppingCartItems, Coupon coupon)
+        public static bool IsCouponTotalSatisfied(ShoppingCart.Concrete.ShoppingCart cart, Coupon coupon)
         {
-            return shoppingCartItems.Sum(item => item.Quantity * item.Product.Price) > coupon.MinimumCartTotal;
+            double totalPrice = cart.ShoppingCartItems.Sum(item => item.Quantity * item.Product.Price);
+            totalPrice -= cart.GetCampaignDiscounts();
+            return totalPrice >= coupon.MinimumCartTotal;
         }
     }
 }

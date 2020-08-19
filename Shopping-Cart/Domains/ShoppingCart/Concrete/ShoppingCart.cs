@@ -27,6 +27,9 @@ namespace Shopping_Cart.Domains.ShoppingCart.Concrete
             get { return _shoppingCartItems; }
         }
 
+        public ICollection<Campaign> AppliedCampaigns => _appliedCampaigns;
+        public ICollection<Coupon> AppliedCoupons => _appliedCoupons;
+
         public ShoppingCart(double costPerDelivery, double costPerProduct, double fixedCost = 2.99)
         {
             _shoppingCartItems = new List<ShoppingCartItem>();
@@ -74,7 +77,7 @@ namespace Shopping_Cart.Domains.ShoppingCart.Concrete
             if (coupon == null)
                 throw new ArgumentNullException(nameof(coupon));
 
-            if (!DiscountSatisfactions.IsCouponTotalSatisfied(_shoppingCartItems, coupon))
+            if (!DiscountSatisfactions.IsCouponTotalSatisfied(this, coupon))
                 return;
 
             _appliedCoupons.Add(coupon);

@@ -1,0 +1,491 @@
+SF:C:\Users\Berkay\source\repos\Shopping-Cart\Shopping-Cart\Domains\ShoppingCart\Concrete\ShoppingCart.cs
+FN:26,System.Collections.Generic.ICollection`1<Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCartItem> Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::get_ShoppingCartItems()
+FNDA:33,System.Collections.Generic.ICollection`1<Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCartItem> Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::get_ShoppingCartItems()
+DA:27,33
+FN:29,System.Collections.Generic.ICollection`1<Shopping_Cart.Domains.Discount.Concrete.Campaign> Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::get_AppliedCampaigns()
+FNDA:3,System.Collections.Generic.ICollection`1<Shopping_Cart.Domains.Discount.Concrete.Campaign> Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::get_AppliedCampaigns()
+DA:30,3
+FN:30,System.Collections.Generic.ICollection`1<Shopping_Cart.Domains.Discount.Concrete.Coupon> Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::get_AppliedCoupons()
+FNDA:3,System.Collections.Generic.ICollection`1<Shopping_Cart.Domains.Discount.Concrete.Coupon> Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::get_AppliedCoupons()
+DA:31,3
+FN:48,System.Void Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::AddItem(Shopping_Cart.Domains.Catalog.Concrete.Product,System.Int32)
+FNDA:13,System.Void Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::AddItem(Shopping_Cart.Domains.Catalog.Concrete.Product,System.Int32)
+DA:49,13
+DA:50,13
+DA:51,13
+FN:58,System.Void Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::ApplyDiscounts(Shopping_Cart.Domains.Discount.Concrete.Campaign[])
+FNDA:5,System.Void Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::ApplyDiscounts(Shopping_Cart.Domains.Discount.Concrete.Campaign[])
+DA:59,5
+DA:60,5
+DA:61,0
+DA:63,25
+DA:64,5
+DA:65,5
+DA:66,1
+DA:67,4
+DA:68,4
+DA:69,5
+BRDA:60,7,0,0
+BRDA:60,7,1,5
+BRDA:63,77,1,5
+BRDA:65,51,1,4
+BRDA:65,51,0,5
+BRDA:63,77,0,5
+FN:75,System.Void Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::ApplyCoupon(Shopping_Cart.Domains.Discount.Concrete.Coupon)
+FNDA:6,System.Void Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::ApplyCoupon(Shopping_Cart.Domains.Discount.Concrete.Coupon)
+DA:76,6
+DA:77,6
+DA:78,0
+DA:80,6
+DA:81,1
+DA:83,5
+DA:84,6
+BRDA:77,7,0,0
+BRDA:77,7,1,6
+BRDA:80,32,1,5
+BRDA:80,32,0,6
+FN:90,System.Double Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::GetCouponDiscounts()
+FNDA:2,System.Double Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::GetCouponDiscounts()
+DA:91,2
+DA:92,4
+DA:93,2
+FN:99,System.Double Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::GetCampaignDiscounts()
+FNDA:8,System.Double Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::GetCampaignDiscounts()
+DA:100,8
+DA:101,12
+DA:102,8
+FN:108,System.Double Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::GetTotalAmountAfterDiscounts()
+FNDA:1,System.Double Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::GetTotalAmountAfterDiscounts()
+DA:109,1
+DA:110,1
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,5
+DA:116,1
+DA:117,1
+DA:118,1
+DA:120,1
+DA:121,1
+BRDA:111,46,1,0
+BRDA:111,46,0,1
+BRDA:115,101,1,1
+BRDA:115,101,0,1
+FN:123,System.Void Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::Print()
+FNDA:0,System.Void Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::Print()
+DA:124,0
+DA:125,0
+DA:126,0
+DA:128,0
+DA:131,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:139,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:156,0
+DA:157,0
+BRDA:132,457,1,0
+BRDA:136,429,1,0
+BRDA:144,294,1,0
+BRDA:144,294,0,0
+BRDA:136,429,0,0
+BRDA:132,457,0,0
+FN:165,System.Double Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::GetDeliveryCost()
+FNDA:2,System.Double Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::GetDeliveryCost()
+DA:166,2
+FN:171,System.Double Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::GetTotalAmount()
+FNDA:3,System.Double Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::GetTotalAmount()
+DA:172,3
+FN:32,System.Void Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::.ctor(System.Double,System.Double,System.Double)
+FNDA:12,System.Void Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart::.ctor(System.Double,System.Double,System.Double)
+DA:33,12
+DA:34,12
+DA:35,12
+DA:36,12
+DA:37,12
+DA:38,12
+DA:39,12
+DA:40,12
+DA:41,12
+LF:81
+LH:46
+BRF:20
+BRH:11
+FNF:13
+FNH:12
+end_of_record
+SF:C:\Users\Berkay\source\repos\Shopping-Cart\Shopping-Cart\Domains\ShoppingCart\Concrete\ShoppingCartItem.cs
+FN:27,System.Int32 Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCartItem::get_Quantity()
+FNDA:30,System.Int32 Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCartItem::get_Quantity()
+DA:28,30
+FN:35,System.Int32 Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCartItem::get_ProductId()
+FNDA:0,System.Int32 Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCartItem::get_ProductId()
+DA:36,0
+FN:44,Shopping_Cart.Domains.Catalog.Concrete.Product Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCartItem::get_Product()
+FNDA:42,Shopping_Cart.Domains.Catalog.Concrete.Product Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCartItem::get_Product()
+DA:45,42
+FN:53,System.Void Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCartItem::.ctor(Shopping_Cart.Domains.Catalog.Concrete.Product,System.Int32)
+FNDA:14,System.Void Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCartItem::.ctor(Shopping_Cart.Domains.Catalog.Concrete.Product,System.Int32)
+DA:54,14
+DA:55,14
+DA:56,14
+DA:57,1
+DA:59,13
+DA:60,0
+DA:62,13
+DA:63,13
+DA:64,13
+DA:65,13
+BRDA:56,14,0,1
+BRDA:56,14,1,13
+BRDA:59,33,0,0
+BRDA:59,33,1,13
+LF:13
+LH:11
+BRF:4
+BRH:3
+FNF:4
+FNH:3
+end_of_record
+SF:C:\Users\Berkay\source\repos\Shopping-Cart\Shopping-Cart\Domains\Discount\Satisfactions\DiscountSatisfactions.cs
+FN:12,System.Boolean Shopping_Cart.Domains.Discount.Satisfactions.DiscountSatisfactions::IsCampaignItemCountSatisfied(System.Collections.Generic.ICollection`1<Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCartItem>,Shopping_Cart.Domains.Discount.Concrete.Campaign)
+FNDA:5,System.Boolean Shopping_Cart.Domains.Discount.Satisfactions.DiscountSatisfactions::IsCampaignItemCountSatisfied(System.Collections.Generic.ICollection`1<Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCartItem>,Shopping_Cart.Domains.Discount.Concrete.Campaign)
+DA:13,5
+DA:14,5
+DA:15,5
+FN:17,System.Boolean Shopping_Cart.Domains.Discount.Satisfactions.DiscountSatisfactions::IsCouponTotalSatisfied(Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart,Shopping_Cart.Domains.Discount.Concrete.Coupon)
+FNDA:6,System.Boolean Shopping_Cart.Domains.Discount.Satisfactions.DiscountSatisfactions::IsCouponTotalSatisfied(Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart,Shopping_Cart.Domains.Discount.Concrete.Coupon)
+DA:18,6
+DA:19,14
+DA:20,6
+DA:21,6
+DA:22,6
+LF:8
+LH:8
+BRF:0
+BRH:0
+FNF:2
+FNH:2
+end_of_record
+SF:C:\Users\Berkay\source\repos\Shopping-Cart\Shopping-Cart\Domains\Discount\Concrete\Campaign.cs
+FN:19,System.Int32 Shopping_Cart.Domains.Discount.Concrete.Campaign::get_CategoryId()
+FNDA:0,System.Int32 Shopping_Cart.Domains.Discount.Concrete.Campaign::get_CategoryId()
+DA:20,0
+FN:27,Shopping_Cart.Domains.Catalog.Concrete.Category Shopping_Cart.Domains.Discount.Concrete.Campaign::get_Category()
+FNDA:0,Shopping_Cart.Domains.Catalog.Concrete.Category Shopping_Cart.Domains.Discount.Concrete.Campaign::get_Category()
+DA:28,0
+FN:36,System.Int32 Shopping_Cart.Domains.Discount.Concrete.Campaign::get_MinimumItem()
+FNDA:15,System.Int32 Shopping_Cart.Domains.Discount.Concrete.Campaign::get_MinimumItem()
+DA:37,15
+FN:48,System.Void Shopping_Cart.Domains.Discount.Concrete.Campaign::.ctor(Shopping_Cart.Domains.Catalog.Concrete.Category,System.Double,System.Int32,Shopping_Cart.Domains.Discount.Enums.DiscountType)
+FNDA:6,System.Void Shopping_Cart.Domains.Discount.Concrete.Campaign::.ctor(Shopping_Cart.Domains.Catalog.Concrete.Category,System.Double,System.Int32,Shopping_Cart.Domains.Discount.Enums.DiscountType)
+DA:49,6
+DA:50,6
+DA:51,6
+DA:52,1
+DA:53,5
+DA:54,0
+DA:57,5
+DA:58,5
+DA:59,5
+DA:60,5
+BRDA:51,17,0,1
+BRDA:51,17,1,5
+BRDA:53,36,0,0
+BRDA:53,36,1,5
+LF:13
+LH:10
+BRF:4
+BRH:3
+FNF:4
+FNH:2
+end_of_record
+SF:C:\Users\Berkay\source\repos\Shopping-Cart\Shopping-Cart\Domains\Discount\Concrete\Coupon.cs
+FN:19,System.Double Shopping_Cart.Domains.Discount.Concrete.Coupon::get_MinimumCartTotal()
+FNDA:18,System.Double Shopping_Cart.Domains.Discount.Concrete.Coupon::get_MinimumCartTotal()
+DA:20,18
+FN:28,System.Void Shopping_Cart.Domains.Discount.Concrete.Coupon::.ctor(System.Double,Shopping_Cart.Domains.Discount.Enums.DiscountType,System.Double)
+FNDA:8,System.Void Shopping_Cart.Domains.Discount.Concrete.Coupon::.ctor(System.Double,Shopping_Cart.Domains.Discount.Enums.DiscountType,System.Double)
+DA:29,8
+DA:30,7
+DA:31,7
+DA:32,1
+DA:34,6
+DA:35,6
+BRDA:31,24,0,1
+BRDA:31,24,1,6
+LF:7
+LH:7
+BRF:2
+BRH:2
+FNF:2
+FNH:2
+end_of_record
+SF:C:\Users\Berkay\source\repos\Shopping-Cart\Shopping-Cart\Domains\Discount\Concrete\Discount.cs
+FN:16,Shopping_Cart.Domains.Discount.Enums.DiscountType Shopping_Cart.Domains.Discount.Concrete.Discount::get_DiscountType()
+FNDA:0,Shopping_Cart.Domains.Discount.Enums.DiscountType Shopping_Cart.Domains.Discount.Concrete.Discount::get_DiscountType()
+DA:17,0
+FN:20,System.Double Shopping_Cart.Domains.Discount.Concrete.Discount::get_Amount()
+FNDA:18,System.Double Shopping_Cart.Domains.Discount.Concrete.Discount::get_Amount()
+DA:21,18
+FN:38,System.Double Shopping_Cart.Domains.Discount.Concrete.Discount::DiscountByPrice(System.Double)
+FNDA:1,System.Double Shopping_Cart.Domains.Discount.Concrete.Discount::DiscountByPrice(System.Double)
+DA:39,1
+DA:40,1
+DA:43,0
+DA:45,1
+DA:47,0
+DA:49,1
+BRDA:40,12,0,1
+BRDA:40,12,1,0
+BRDA:40,18,1,1
+BRDA:40,18,0,0
+FN:50,System.Double Shopping_Cart.Domains.Discount.Concrete.Discount::ApplyDiscount(System.Double)
+FNDA:1,System.Double Shopping_Cart.Domains.Discount.Concrete.Discount::ApplyDiscount(System.Double)
+DA:51,1
+DA:52,1
+DA:53,1
+DA:54,1
+FN:29,System.Void Shopping_Cart.Domains.Discount.Concrete.Discount::.ctor(Shopping_Cart.Domains.Discount.Enums.DiscountType,System.Double)
+FNDA:14,System.Void Shopping_Cart.Domains.Discount.Concrete.Discount::.ctor(Shopping_Cart.Domains.Discount.Enums.DiscountType,System.Double)
+DA:30,14
+DA:31,14
+DA:32,14
+DA:33,1
+DA:35,13
+DA:36,13
+DA:37,13
+BRDA:32,22,0,1
+BRDA:32,22,1,13
+LF:19
+LH:16
+BRF:6
+BRH:4
+FNF:5
+FNH:4
+end_of_record
+SF:C:\Users\Berkay\source\repos\Shopping-Cart\Shopping-Cart\Domains\Delivery\Concrete\DeliveryCostCalculator.cs
+FN:34,System.Double Shopping_Cart.Domains.Delivery.Concrete.DeliveryCostCalculator::get_FixedCost()
+FNDA:0,System.Double Shopping_Cart.Domains.Delivery.Concrete.DeliveryCostCalculator::get_FixedCost()
+DA:35,0
+FN:43,System.Double Shopping_Cart.Domains.Delivery.Concrete.DeliveryCostCalculator::get_CostPerProduct()
+FNDA:0,System.Double Shopping_Cart.Domains.Delivery.Concrete.DeliveryCostCalculator::get_CostPerProduct()
+DA:44,0
+FN:51,System.Double Shopping_Cart.Domains.Delivery.Concrete.DeliveryCostCalculator::get_CostPerDelivery()
+FNDA:0,System.Double Shopping_Cart.Domains.Delivery.Concrete.DeliveryCostCalculator::get_CostPerDelivery()
+DA:52,0
+FN:56,System.Double Shopping_Cart.Domains.Delivery.Concrete.DeliveryCostCalculator::CalculateFor(Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart)
+FNDA:2,System.Double Shopping_Cart.Domains.Delivery.Concrete.DeliveryCostCalculator::CalculateFor(Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart)
+DA:57,2
+DA:58,2
+DA:59,2
+DA:60,2
+DA:61,2
+FN:68,System.Int32 Shopping_Cart.Domains.Delivery.Concrete.DeliveryCostCalculator::GetNumberOfDeliveries(Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart)
+FNDA:4,System.Int32 Shopping_Cart.Domains.Delivery.Concrete.DeliveryCostCalculator::GetNumberOfDeliveries(Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart)
+DA:69,4
+FN:77,System.Int32 Shopping_Cart.Domains.Delivery.Concrete.DeliveryCostCalculator::GetNumberUniqueProducts(Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart)
+FNDA:4,System.Int32 Shopping_Cart.Domains.Delivery.Concrete.DeliveryCostCalculator::GetNumberUniqueProducts(Shopping_Cart.Domains.ShoppingCart.Concrete.ShoppingCart)
+DA:78,4
+FN:13,System.Void Shopping_Cart.Domains.Delivery.Concrete.DeliveryCostCalculator::.ctor(System.Double,System.Double,System.Double)
+FNDA:5,System.Void Shopping_Cart.Domains.Delivery.Concrete.DeliveryCostCalculator::.ctor(System.Double,System.Double,System.Double)
+DA:14,5
+DA:15,5
+DA:16,5
+DA:17,1
+DA:19,4
+DA:20,1
+DA:22,3
+DA:23,1
+DA:25,2
+DA:26,2
+DA:27,2
+DA:28,2
+BRDA:16,22,0,1
+BRDA:16,22,1,4
+BRDA:19,49,0,1
+BRDA:19,49,1,3
+BRDA:22,76,0,1
+BRDA:22,76,1,2
+LF:22
+LH:19
+BRF:6
+BRH:6
+FNF:7
+FNH:4
+end_of_record
+SF:C:\Users\Berkay\source\repos\Shopping-Cart\Shopping-Cart\Domains\Catalog\Concrete\Category.cs
+FN:27,System.Collections.Generic.ICollection`1<Shopping_Cart.Domains.Catalog.Concrete.Category> Shopping_Cart.Domains.Catalog.Concrete.Category::get_Childs()
+FNDA:0,System.Collections.Generic.ICollection`1<Shopping_Cart.Domains.Catalog.Concrete.Category> Shopping_Cart.Domains.Catalog.Concrete.Category::get_Childs()
+DA:28,0
+FN:28,System.Void Shopping_Cart.Domains.Catalog.Concrete.Category::set_Childs(System.Collections.Generic.ICollection`1<Shopping_Cart.Domains.Catalog.Concrete.Category>)
+FNDA:0,System.Void Shopping_Cart.Domains.Catalog.Concrete.Category::set_Childs(System.Collections.Generic.ICollection`1<Shopping_Cart.Domains.Catalog.Concrete.Category>)
+DA:29,0
+FN:32,System.String Shopping_Cart.Domains.Catalog.Concrete.Category::get_Title()
+FNDA:9,System.String Shopping_Cart.Domains.Catalog.Concrete.Category::get_Title()
+DA:33,9
+FN:33,System.Void Shopping_Cart.Domains.Catalog.Concrete.Category::set_Title(System.String)
+FNDA:0,System.Void Shopping_Cart.Domains.Catalog.Concrete.Category::set_Title(System.String)
+DA:34,0
+FN:41,System.Int32 Shopping_Cart.Domains.Catalog.Concrete.Category::get_ParentId()
+FNDA:0,System.Int32 Shopping_Cart.Domains.Catalog.Concrete.Category::get_ParentId()
+DA:42,0
+FN:42,System.Void Shopping_Cart.Domains.Catalog.Concrete.Category::set_ParentId(System.Int32)
+FNDA:0,System.Void Shopping_Cart.Domains.Catalog.Concrete.Category::set_ParentId(System.Int32)
+DA:43,0
+FN:47,Shopping_Cart.Domains.Catalog.Concrete.Category Shopping_Cart.Domains.Catalog.Concrete.Category::get_Parent()
+FNDA:0,Shopping_Cart.Domains.Catalog.Concrete.Category Shopping_Cart.Domains.Catalog.Concrete.Category::get_Parent()
+DA:48,0
+FN:48,System.Void Shopping_Cart.Domains.Catalog.Concrete.Category::set_Parent(Shopping_Cart.Domains.Catalog.Concrete.Category)
+FNDA:0,System.Void Shopping_Cart.Domains.Catalog.Concrete.Category::set_Parent(Shopping_Cart.Domains.Catalog.Concrete.Category)
+DA:49,0
+FN:56,System.Void Shopping_Cart.Domains.Catalog.Concrete.Category::.ctor(System.String,Shopping_Cart.Domains.Catalog.Concrete.Category)
+FNDA:17,System.Void Shopping_Cart.Domains.Catalog.Concrete.Category::.ctor(System.String,Shopping_Cart.Domains.Catalog.Concrete.Category)
+DA:57,17
+DA:58,17
+DA:59,17
+DA:60,4
+DA:62,13
+DA:64,13
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,13
+BRDA:59,16,0,4
+BRDA:59,16,1,13
+BRDA:64,42,0,0
+BRDA:64,42,1,13
+LF:19
+LH:8
+BRF:4
+BRH:3
+FNF:9
+FNH:2
+end_of_record
+SF:C:\Users\Berkay\source\repos\Shopping-Cart\Shopping-Cart\Domains\Catalog\Concrete\Product.cs
+FN:23,System.String Shopping_Cart.Domains.Catalog.Concrete.Product::get_Title()
+FNDA:6,System.String Shopping_Cart.Domains.Catalog.Concrete.Product::get_Title()
+DA:24,6
+FN:24,System.Void Shopping_Cart.Domains.Catalog.Concrete.Product::set_Title(System.String)
+FNDA:0,System.Void Shopping_Cart.Domains.Catalog.Concrete.Product::set_Title(System.String)
+DA:25,0
+FN:32,System.Double Shopping_Cart.Domains.Catalog.Concrete.Product::get_Price()
+FNDA:30,System.Double Shopping_Cart.Domains.Catalog.Concrete.Product::get_Price()
+DA:33,30
+FN:33,System.Void Shopping_Cart.Domains.Catalog.Concrete.Product::set_Price(System.Double)
+FNDA:0,System.Void Shopping_Cart.Domains.Catalog.Concrete.Product::set_Price(System.Double)
+DA:34,0
+FN:41,System.Int32 Shopping_Cart.Domains.Catalog.Concrete.Product::get_CategoryId()
+FNDA:0,System.Int32 Shopping_Cart.Domains.Catalog.Concrete.Product::get_CategoryId()
+DA:42,0
+FN:42,System.Void Shopping_Cart.Domains.Catalog.Concrete.Product::set_CategoryId(System.Int32)
+FNDA:0,System.Void Shopping_Cart.Domains.Catalog.Concrete.Product::set_CategoryId(System.Int32)
+DA:43,0
+FN:51,Shopping_Cart.Domains.Catalog.Concrete.Category Shopping_Cart.Domains.Catalog.Concrete.Product::get_Category()
+FNDA:6,Shopping_Cart.Domains.Catalog.Concrete.Category Shopping_Cart.Domains.Catalog.Concrete.Product::get_Category()
+DA:52,6
+FN:52,System.Void Shopping_Cart.Domains.Catalog.Concrete.Product::set_Category(Shopping_Cart.Domains.Catalog.Concrete.Category)
+FNDA:0,System.Void Shopping_Cart.Domains.Catalog.Concrete.Product::set_Category(Shopping_Cart.Domains.Catalog.Concrete.Category)
+DA:53,0
+FN:61,System.Void Shopping_Cart.Domains.Catalog.Concrete.Product::.ctor(System.String,System.Single,Shopping_Cart.Domains.Catalog.Concrete.Category)
+FNDA:16,System.Void Shopping_Cart.Domains.Catalog.Concrete.Product::.ctor(System.String,System.Single,Shopping_Cart.Domains.Catalog.Concrete.Category)
+DA:62,16
+DA:63,16
+DA:65,16
+DA:66,1
+DA:68,15
+DA:69,1
+DA:71,14
+DA:72,1
+DA:74,13
+DA:75,13
+DA:76,13
+DA:77,13
+BRDA:65,16,0,1
+BRDA:65,16,1,15
+BRDA:68,35,0,1
+BRDA:68,35,1,14
+BRDA:71,58,0,1
+BRDA:71,58,1,13
+LF:20
+LH:15
+BRF:6
+BRH:6
+FNF:9
+FNH:4
+end_of_record
+SF:C:\Users\Berkay\source\repos\Shopping-Cart\Shopping-Cart\Concrete\AuditedEntity.cs
+FN:19,TKey Shopping_Cart.Concrete.AuditedEntity`1::get_Id()
+FNDA:0,TKey Shopping_Cart.Concrete.AuditedEntity`1::get_Id()
+DA:20,0
+FN:20,System.Boolean Shopping_Cart.Concrete.AuditedEntity`1::get_IsActive()
+FNDA:0,System.Boolean Shopping_Cart.Concrete.AuditedEntity`1::get_IsActive()
+DA:21,0
+FN:21,System.DateTime Shopping_Cart.Concrete.AuditedEntity`1::get_CreationTime()
+FNDA:0,System.DateTime Shopping_Cart.Concrete.AuditedEntity`1::get_CreationTime()
+DA:22,0
+FN:22,System.Nullable`1<System.Int32> Shopping_Cart.Concrete.AuditedEntity`1::get_CreatorUserId()
+FNDA:0,System.Nullable`1<System.Int32> Shopping_Cart.Concrete.AuditedEntity`1::get_CreatorUserId()
+DA:23,0
+LF:4
+LH:0
+BRF:0
+BRH:0
+FNF:4
+FNH:0
+end_of_record
+SF:C:\Users\Berkay\source\repos\Shopping-Cart\Shopping-Cart\Concrete\FullAuditedEntity.cs
+FN:19,TKey Shopping_Cart.Concrete.FullAuditedEntity`1::get_Id()
+FNDA:0,TKey Shopping_Cart.Concrete.FullAuditedEntity`1::get_Id()
+DA:20,0
+FN:20,System.Boolean Shopping_Cart.Concrete.FullAuditedEntity`1::get_IsActive()
+FNDA:0,System.Boolean Shopping_Cart.Concrete.FullAuditedEntity`1::get_IsActive()
+DA:21,0
+FN:21,System.DateTime Shopping_Cart.Concrete.FullAuditedEntity`1::get_CreationTime()
+FNDA:0,System.DateTime Shopping_Cart.Concrete.FullAuditedEntity`1::get_CreationTime()
+DA:22,0
+FN:22,System.Nullable`1<System.Int32> Shopping_Cart.Concrete.FullAuditedEntity`1::get_CreatorUserId()
+FNDA:0,System.Nullable`1<System.Int32> Shopping_Cart.Concrete.FullAuditedEntity`1::get_CreatorUserId()
+DA:23,0
+FN:23,System.DateTime Shopping_Cart.Concrete.FullAuditedEntity`1::get_LastModificationTime()
+FNDA:0,System.DateTime Shopping_Cart.Concrete.FullAuditedEntity`1::get_LastModificationTime()
+DA:24,0
+FN:24,System.Int32 Shopping_Cart.Concrete.FullAuditedEntity`1::get_LastModifierId()
+FNDA:0,System.Int32 Shopping_Cart.Concrete.FullAuditedEntity`1::get_LastModifierId()
+DA:25,0
+FN:25,System.DateTime Shopping_Cart.Concrete.FullAuditedEntity`1::get_DeletionTime()
+FNDA:0,System.DateTime Shopping_Cart.Concrete.FullAuditedEntity`1::get_DeletionTime()
+DA:26,0
+FN:26,System.Int32 Shopping_Cart.Concrete.FullAuditedEntity`1::get_DeletorUserId()
+FNDA:0,System.Int32 Shopping_Cart.Concrete.FullAuditedEntity`1::get_DeletorUserId()
+DA:27,0
+FN:27,System.Boolean Shopping_Cart.Concrete.FullAuditedEntity`1::get_IsDeleted()
+FNDA:0,System.Boolean Shopping_Cart.Concrete.FullAuditedEntity`1::get_IsDeleted()
+DA:28,0
+LF:9
+LH:0
+BRF:0
+BRH:0
+FNF:9
+FNH:0
+end_of_record

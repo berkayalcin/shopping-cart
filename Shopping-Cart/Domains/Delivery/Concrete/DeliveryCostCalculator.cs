@@ -1,5 +1,6 @@
 ﻿using Shopping_Cart.Concrete;
 using Shopping_Cart.Domains.ShoppingCart.Concrete;
+using System;
 using System.Linq;
 
 namespace Shopping_Cart.Domains.Delivery.Concrete
@@ -12,6 +13,15 @@ namespace Shopping_Cart.Domains.Delivery.Concrete
 
         public DeliveryCostCalculator(double costPerDelivery, double costPerProduct, double fixedCost)
         {
+            if (costPerDelivery < 0)
+                throw new ArgumentNullException(nameof(costPerDelivery));
+
+            if (costPerProduct < 0)
+                throw new ArgumentNullException(nameof(costPerProduct));
+
+            if (fixedCost < 0)
+                throw new ArgumentNullException(nameof(fixedCost));
+
             _costPerDelivery = costPerDelivery;
             _costPerProduct = costPerProduct;
             _fixedCost = fixedCost;
